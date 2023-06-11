@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Random Password Generator</h2>
+
+      <div class="ticks">
+        <input type="checkbox" class="tick_style" id="uc" checked />
+        <label>Uppercase</label>
+
+        <input type="checkbox" class="tick_style" id="lc" checked />
+        <label>Lowercase</label>
+        <br />
+
+        <input type="checkbox" class="tick_style" id="no" checked />
+        <label>Numbers</label>
+
+        <input type="checkbox" class="tick_style" id="sp" checked />
+        <label>Symbols</label>
+        <br />
+
+      </div>
+
+
+      <div class="box">
+        <input type="text" id="password" placeholder="Your Password" readonly />
+        <i class="far fa-copy fa-2x"></i>
+      </div>
+      <button id="generate">Generate</button>
+    </div>
+
+    <div class="alert active">Copied Successfully</div>
+    <script src="index.js"></script>
+  </body>
+</html>
